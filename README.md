@@ -47,16 +47,6 @@ The resource also ships with a curated set of default IMAP removals/additions an
    ```
 4. Restart the server (or run `refresh` then `ensure rsg-mapping`).
 
-### Upgrading from rex-imap
-
-The database table was renamed from `rex_imaps` to `rsg_imaps`. To keep your saved labels and states, run this once **before** starting the new version:
-
-```sql
-RENAME TABLE rex_imaps TO rsg_imaps;
-```
-
-Then remove or stop the old `rex-imap` resource so both don't run at once.
-
 ---
 
 ## Configuration
